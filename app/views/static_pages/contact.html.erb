@@ -4,7 +4,7 @@
   Contact Ruby on Rails Tutorial about the sample app at the
   <a href="http://railstutorial.org/contact">contact page</a>.
 </p>
-    <form method="POST" action="{{contents.customer_messages.public_submission_url}}">
+    <form method="POST" action="/contact">
       {% csrf_param %}
       <input type="hidden" value="/" name="success_callback" />
       <input type="hidden" value="/contact" name="error_callback" />
